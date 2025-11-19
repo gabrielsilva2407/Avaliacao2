@@ -1,63 +1,178 @@
+/* Container principal com gradiente */
 .container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
+/* Card principal com efeito moderno */
 .card {
-  width: 650px;
-  background: #ffffff;
-  padding: 25px 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
-  animation: fadeIn 0.4s ease-in-out;
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+  animation: fadeInScale 0.5s ease-out;
 }
 
+/* Título com gradiente */
 .title {
   text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  color: #0d3967;
-  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
 }
 
+/* Botão de voltar */
+.backButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.backButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.backButton::before {
+  content: '←';
+  font-size: 18px;
+}
+
+/* Tabela moderna */
 .table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* Cabeçalho da tabela com gradiente */
 .table thead {
-  background-color: #0d3967;
-  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .table th {
-  padding: 12px 15px;
+  padding: 18px 20px;
   font-size: 16px;
+  font-weight: 600;
   text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Células da tabela */
 .table tbody td {
-  padding: 12px 15px;
+  padding: 18px 20px;
   font-size: 16px;
-  border-bottom: 1px solid #d8dbe0;
+  color: #2d3748;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
 }
 
-tbody tr:hover {
-  background-color: #f1f7ff;
+/* Primeira coluna em destaque */
+.table tbody td:first-child {
+  font-weight: 600;
+  color: #667eea;
 }
 
-@keyframes fadeIn {
+/* Hover nas linhas */
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background: linear-gradient(90deg, #f7fafc 0%, #edf2f7 100%);
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+}
+
+.table tbody tr:hover td {
+  color: #1a202c;
+}
+
+/* Última linha sem borda */
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Animação de entrada */
+@keyframes fadeInScale {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: scale(0.95) translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Badge para valores */
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .table th,
+  .table td {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .backButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Scroll suave na tabela em mobile */
+@media (max-width: 640px) {
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
