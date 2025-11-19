@@ -66,4 +66,5 @@ O sistema consome dados de uma API REST pública, permitindo visualizar listagen
 
 ### 📋 Pré-requisitos
 - Node.js 20+ instalado
-- npm ou
+- npm install 
+- npm run dev
