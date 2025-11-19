@@ -1,4 +1,4 @@
-/* Container principal com gradiente */
+
 .container {
   min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -8,7 +8,7 @@
   padding: 40px 20px;
 }
 
-/* Card principal com efeito moderno */
+
 .card {
   width: 100%;
   max-width: 800px;
@@ -20,7 +20,7 @@
   animation: fadeInScale 0.5s ease-out;
 }
 
-/* Título com gradiente */
+
 .title {
   text-align: center;
   font-size: 36px;
@@ -33,7 +33,7 @@
   letter-spacing: -1px;
 }
 
-/* Botão de voltar */
+
 .backButton {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -61,7 +61,7 @@
   font-size: 18px;
 }
 
-/* Tabela moderna */
+
 .table {
   width: 100%;
   border-collapse: separate;
@@ -71,7 +71,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* Cabeçalho da tabela com gradiente */
+
 .table thead {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
@@ -87,7 +87,7 @@
   border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Células da tabela */
+
 .table tbody td {
   padding: 18px 20px;
   font-size: 16px;
@@ -97,13 +97,13 @@
   transition: all 0.3s ease;
 }
 
-/* Primeira coluna em destaque */
+
 .table tbody td:first-child {
   font-weight: 600;
   color: #667eea;
 }
 
-/* Hover nas linhas */
+
 .table tbody tr {
   transition: all 0.3s ease;
 }
@@ -118,12 +118,12 @@
   color: #1a202c;
 }
 
-/* Última linha sem borda */
+
 .table tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* Animação de entrada */
+
 @keyframes fadeInScale {
   from {
     opacity: 0;
@@ -135,7 +135,7 @@
   }
 }
 
-/* Badge para valores */
+
 .badge {
   display: inline-block;
   padding: 6px 12px;
@@ -146,7 +146,7 @@
   font-weight: 600;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
   .card {
     padding: 30px 20px;
@@ -168,7 +168,7 @@
   }
 }
 
-/* Scroll suave na tabela em mobile */
+
 @media (max-width: 640px) {
   .table {
     display: block;
