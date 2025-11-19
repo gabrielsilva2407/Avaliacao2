@@ -42,7 +42,7 @@ export default function HomeScreen() {
         alignItems: "center",
       }}
     >
-      {/* Título com estilo gradiente simulado */}
+      {}
       <View style={{
         backgroundColor: "rgba(255, 255, 255, 0.95)",
         paddingVertical: 15,

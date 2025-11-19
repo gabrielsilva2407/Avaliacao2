@@ -42,7 +42,7 @@ export default function Descricao() {
         paddingTop: 60,
       }}
     >
-      {/* Botão Voltar */}
+      {}
       <TouchableOpacity
         onPress={() => navigation.goBack()}
         style={{
@@ -68,7 +68,7 @@ export default function Descricao() {
         </Text>
       </TouchableOpacity>
 
-      {/* Título */}
+      {}
       <View style={{
         backgroundColor: "rgba(255, 255, 255, 0.95)",
         paddingVertical: 15,
@@ -93,7 +93,7 @@ export default function Descricao() {
         </Text>
       </View>
 
-      {/* Card de Informações */}
+      {}
       <View
         style={{
           width: "100%",
@@ -108,7 +108,7 @@ export default function Descricao() {
           borderLeftColor: "#764ba2",
         }}
       >
-        {/* Linha - Nome */}
+        {}
         <View
           style={{
             flexDirection: "row",
@@ -137,7 +137,7 @@ export default function Descricao() {
           </Text>
         </View>
 
-        {/* Linha - Turma */}
+        {}
         <View
           style={{
             flexDirection: "row",
@@ -166,7 +166,7 @@ export default function Descricao() {
           </Text>
         </View>
 
-        {/* Linha - Curso */}
+        {}
         <View
           style={{
             flexDirection: "row",
@@ -195,7 +195,7 @@ export default function Descricao() {
           </Text>
         </View>
 
-        {/* Linha - Matrícula */}
+        {}
         <View
           style={{
             flexDirection: "row",
